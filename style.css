@@ -1,0 +1,81 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+
+
+.choice-grid{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 700px;
+    
+    flex-direction: row;
+    
+}
+
+.choice-grid div{
+    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 32.5%;
+    
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 20px;
+    
+}
+
+.choice-grid div img{
+    height: 100%;
+    flex-grow: 1;
+}
+
+
+@media(max-width: 700px){
+    article{
+        width: 95%;
+    }
+    header div span{
+        display: none;
+    }
+    .choice-grid{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .choice-grid div{
+        width: 49%;
+    }
+}
+
+.selected{
+    background-color: #cfe3ff;
+}
+
+.opacity{
+    opacity: 0.6;
+}
+
+#reset-quiz{
+    background-color: #cecece;
+    height: 50px;;
+    width: 100%;
+}
+
+#reset-quiz:hover{
+    background-color: #e0e0e0;
+}
+
+.results{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.results p{
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
